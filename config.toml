@@ -1,0 +1,240 @@
+# Page settings
+
+baseurl = "https://robrotheram.com/"
+languageCode = "en-us"
+title = "Robert Fletcher Resume"
+theme = "hugo-orbit-theme"
+
+# Do not build files for websites. Need them? Set to false
+disableRSS = true
+disableSitemap = true
+disable404 = true
+
+[params]
+
+# Meta
+    description = "Robert Fletcher Resume"
+    author = "Robert Fletcher"
+    title = "Robert Fletcher Resume"
+# Theme styles
+
+    # The original template comes with 6 colour schemes. You may choose styles below.
+    # "styles.css", "styles-2.css", "styles-3.css", "styles-4.css", "styles-5.css", "styles-6.css"
+    # are available. Also the source LESS files are included so
+    # it’s quick and easy to change the styling and colour scheme.
+
+    styles = "styles-30.css"
+
+# Sidebar sectionsy27pcnJSSzhusD
+
+    # Profile section
+    [params.profile]
+        name = "Robert Fletcher"
+        tagline = "Big Data Engineer, Cloud lover, Linux Advocate and will dockerise anything I touch"
+        avatar = "profile.jpg"
+
+    # Contact section
+    [params.contact]
+        enable = true
+
+        [[params.contact.list]]
+        class = "email"
+        icon = "fa-envelope"
+        url = "mailto: contact@robrotheram.com"
+        title = "contact@robrotheram.com"
+
+        # [[params.contact.list]]
+        # class = "phone"
+        # icon = "fa-phone"
+        # url = "tel:+1234567890"
+        # title = "+1234567890"
+
+        [[params.contact.list]]
+        class = "blog"
+        icon = "fa-edit"
+        url = "//blog.robrotheram.com"
+        title = "blog.robrotheram.com"
+
+        [[params.contact.list]]
+        class = "gallery"
+        icon = "fa-camera-retro"
+        url = "//gallery.robrotheram.com"
+        title = "gallery.robrotheram.com"
+
+        [[params.contact.list]]
+        class = "linkedin"
+        icon = "fa-linkedin"
+        url = "//linkedin.com/in/robrotheram"
+        title = "linkedin.com/in/robrotheram"
+
+        [[params.contact.list]]
+        class = "github"
+        icon = "fa-github"
+        url = "//github.com/robrotheram"
+        title = "github.com/robrotheram"
+
+        [[params.contact.list]]
+        class = "twitter"
+        icon = "fa-twitter"
+        url = "//twitter.com/robrotheram"
+        title = "@robrotheram"
+
+    # Education section
+    [params.education]
+        enable = true
+        title = "Education"
+
+        [[params.education.list]]
+        degree = "MENG in Computer Science"
+        college = "University of Swansea"
+        dates = "2011 - 2015"
+
+
+    # Languages section
+    # [params.language]
+    #     enable = true
+    #     title = "Languages"
+    #
+    #     [[params.language.list]]
+    #     language = "English"
+    #     level = "Native"
+    #
+    #     [[params.language.list]]
+    #     language = "French"
+    #     level = "Professional"
+    #
+    #     [[params.language.list]]
+    #     language = "Russian"
+    #     level = "Professional"
+    #
+    # # Interests section
+    # [params.interests]
+    #     enable = true
+    #     title = "Interests"
+    #
+    #     [[params.interests.list]]
+    #     interest = "Climbing"
+    #
+    #     [[params.interests.list]]
+    #     interest = "Snowboarding"
+    #
+    #     [[params.interests.list]]
+    #     interest = "Cooking"
+
+# Main body sections
+
+    # You may use markdown in summary, details and intro fields. But don't overdose, it's resume!:)
+
+    # Summary section
+    [params.summary]
+        enable = true
+        icon = "fa-user"
+        title = "About Me"
+        summary = "I am passionate open-source advocate and loves being on the bleeding edge (I have built my own hadoop cluster from source), I have used multiple container orchestration platforms (Openshift, Kubernetes, Rancher) and I have containerised pretty much everything from minecraft servers / tile-servers to eclipse. \n\n I have developed custom applications in many different languages from Java Python and Golang for backend technologies to React and Angular in the Frontend. I have a strong Devopps focus building custom CI platforms that uses ansible for testing application with many external depenancies. \n\n Building scalable systems from scratch and choosing the best technology for each component is where I thrive."
+
+    # Experiences section
+    [params.experiences]
+        enable = true
+        icon = "fa-briefcase"
+        title = "Experiences"
+
+        [[params.jobs.list]]
+        position = "Big Data Engineer"
+        dates = "2016 - Present"
+        company = "Qinetiq"
+        details = "Sysadmin of small production network configured Cisco/Fortinet firewalls, Windows AD servers \n\n Research ELK Stack usecases inside Qinetiq\n\n Created Custom Kibana plugin \n\n Custom Signal Processing framework using REDHAWK SDR, MongoDB, Docker Containers for horizontal scalability \n\n Custom UI Fronted to the Analytic platform in React \n\n Designed a Big Data modular streaming Architecture."
+
+        [[params.jobs.list]]
+        position = "Software Engineer"
+        dates = "2015 - 2016"
+        company = "Cisco"
+        details = "Worked on Perl Manufacturing Management Platform \n\n Installation and configuration of multiple Openstack Clusters in worldwide data centers  \n\n Implement a big data Analytic platform that uses Logstash, Scala/Spark and MongoDB  \n\n Custom UI Fronted to the Analytic platform written in Angualrjs and custom D3 Visualization"
+
+        [[params.jobs.list]]
+        position = "Freelance Software Developer"
+        dates = "2014"
+        company = "Hoowla"
+        details = "I worked on a Laravel PHP project where my main responablilty was to add the Land Registry integration which require building acustom XML parser to interact with SOAP API "
+
+        [[params.jobs.list]]
+        position = "Software Developer"
+        dates = "2014"
+        company = "Sureview systems"
+        details = "At Sureview my responsibilty was to create an Android App that provides mobile access to real time event data for users of Immix® Cloud. It also needed to view event video, recorded audit trails,access live camera feeds, and event reports."
+
+    # Projects section
+    [params.projects]
+        enable = true
+        icon = "fa-archive"
+        title = "Projects"
+        intro = "**Here is a list of some of the stuff I am working on in my free time:**"
+
+        [[params.projects.list]]
+        title = "GoGallery"
+        url = "https://github.com/robrotheram/GoGallery"
+        tagline = "Simple filebased web gallery with thumbnial generator written in go."
+
+        [[params.projects.list]]
+        title = "HomeLabPortal"
+        url = "https://github.com/robrotheram/HomeLabPortal"
+        tagline = "Simple webportal and treafik configuration tool"
+
+        [[params.projects.list]]
+        title = "docker-koken-lemp"
+        url = "https://github.com/robrotheram/docker-koken-lemp"
+        tagline = "Docker container for the koken gallery"
+
+        [[params.projects.list]]
+        title = "taiga-contrib-openid-auth"
+        url = "https://github.com/robrotheram/taiga-contrib-openid-auth"
+        tagline = "Openid / Keycloak authentication plugin for Taiga.io"
+
+        [[params.projects.list]]
+        title = "goJobScheduler"
+        url = "https://github.com/robrotheram/goJobScheduler"
+        tagline = "A golang job scheduler for long running ingestion jobs. It is currently designed for for parsing news feed and twitter and storing them in elasticsearch and minio"
+
+    # Skills section
+    [params.skills]
+        enable = true
+        icon = "fa-rocket"
+        title = "Skills & Proficiency"
+
+        [[params.skills.list]]
+        skill = "Ansible"
+        level = "95%"
+
+        [[params.skills.list]]
+        skill = "Docker"
+        level = "95%"
+
+        [[params.skills.list]]
+        skill = "Go"
+        level = "80%"
+
+        [[params.skills.list]]
+        skill = "Java"
+        level = "85%"
+
+
+
+        [[params.skills.list]]
+        skill = "Javascript"
+        level = "70%"
+
+        [[params.skills.list]]
+        skill = "Python"
+        level = "50%"
+
+
+    # Footer section
+
+    # The original template is released under the Creative Commons Attribution 3.0 License.
+    # Please keep the original attribution link when using for your own project.
+    # If you'd like to use the template without the attribution,
+    # you can check out other license options via template author's website: themes.3rdwavemedia.com
+    #
+    # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
+
+    [params.footer]
+copyright = ""

@@ -3,24 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://robrotheram.com/post/first-post/</loc>
-    <lastmod>2019-02-25T23:12:18+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://robrotheram.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://robrotheram.com/post/</loc>
-    <lastmod>2019-02-25T23:12:18+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://robrotheram.com/</loc>
-    <lastmod>2019-02-25T23:12:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   

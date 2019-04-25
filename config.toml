@@ -170,6 +170,12 @@ disable404 = true
         intro = "**Here is a list of some of the stuff I am working on in my free time:**"
 
         [[params.projects.list]]
+        title = "gofi"
+        url = "https://github.com/robrotheram/gofi"
+        tagline = "A Simple implementation of node based programming in go and docker aim of replicating apache nifi in golang"
+
+
+        [[params.projects.list]]
         title = "GoGallery"
         url = "https://github.com/robrotheram/GoGallery"
         tagline = "Simple filebased web gallery with thumbnial generator written in go."
@@ -188,12 +194,7 @@ disable404 = true
         title = "taiga-contrib-openid-auth"
         url = "https://github.com/robrotheram/taiga-contrib-openid-auth"
         tagline = "Openid / Keycloak authentication plugin for Taiga.io"
-
-        [[params.projects.list]]
-        title = "goJobScheduler"
-        url = "https://github.com/robrotheram/goJobScheduler"
-        tagline = "A golang job scheduler for long running ingestion jobs. It is currently designed for for parsing news feed and twitter and storing them in elasticsearch and minio"
-
+        
     # Skills section
     [params.skills]
         enable = true

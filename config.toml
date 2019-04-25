@@ -170,10 +170,9 @@ disable404 = true
         intro = "**Here is a list of some of the stuff I am working on in my free time:**"
 
         [[params.projects.list]]
-        title = "gofi"
+        title = "GoFi"
         url = "https://github.com/robrotheram/gofi"
         tagline = "A Simple implementation of node based programming in go and docker aim of replicating apache nifi in golang"
-
 
         [[params.projects.list]]
         title = "GoGallery"

@@ -89,42 +89,6 @@ disable404 = true
         college = "University of Swansea"
         dates = "2011 - 2015"
 
-
-    # Languages section
-    # [params.language]
-    #     enable = true
-    #     title = "Languages"
-    #
-    #     [[params.language.list]]
-    #     language = "English"
-    #     level = "Native"
-    #
-    #     [[params.language.list]]
-    #     language = "French"
-    #     level = "Professional"
-    #
-    #     [[params.language.list]]
-    #     language = "Russian"
-    #     level = "Professional"
-    #
-    # # Interests section
-    # [params.interests]
-    #     enable = true
-    #     title = "Interests"
-    #
-    #     [[params.interests.list]]
-    #     interest = "Climbing"
-    #
-    #     [[params.interests.list]]
-    #     interest = "Snowboarding"
-    #
-    #     [[params.interests.list]]
-    #     interest = "Cooking"
-
-# Main body sections
-
-    # You may use markdown in summary, details and intro fields. But don't overdose, it's resume!:)
-
     # Summary section
     [params.summary]
         enable = true
@@ -172,7 +136,7 @@ disable404 = true
         [[params.projects.list]]
         title = "GoFi"
         url = "https://github.com/robrotheram/gofi"
-        tagline = "A Simple implementation of node based programming in go and docker aim of replicating apache nifi in golang"
+        tagline = "Gofi a node base programming system attempting to emulate apache NiFi"
 
         [[params.projects.list]]
         title = "GoGallery"
@@ -193,7 +157,7 @@ disable404 = true
         title = "taiga-contrib-openid-auth"
         url = "https://github.com/robrotheram/taiga-contrib-openid-auth"
         tagline = "Openid / Keycloak authentication plugin for Taiga.io"
-        
+
     # Skills section
     [params.skills]
         enable = true
@@ -216,8 +180,6 @@ disable404 = true
         skill = "Java"
         level = "85%"
 
-
-
         [[params.skills.list]]
         skill = "Javascript"
         level = "70%"
@@ -225,7 +187,6 @@ disable404 = true
         [[params.skills.list]]
         skill = "Python"
         level = "50%"
-
 
     # Footer section
 

@@ -6,7 +6,7 @@ install:
     - pip install Pygments
 
 script:
-    - hugo -t hugo-orbit-theme
+    - hugo -t hugo-orbit-theme-custom
 
 deploy:
   - provider: pages

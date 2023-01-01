@@ -34,11 +34,11 @@
   url = "https://github.com/robrotheram"
   weight = 80
 
-[[main]]
-  identifier = "mail"
-  pre = "microsoft"
-  url = "http://mail.tinkers.space"
-  weight = 90
+#[[main]]
+#  identifier = "mail"
+#  pre = "microsoft"
+#  url = "http://mail.tinkers.space"
+#  weight = 90
 
 
 # -- Footer Menu --

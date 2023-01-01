@@ -17,7 +17,4 @@ dateFormat = "2 January 2006"
   image = "img/profile.jpg"
   headline = "Software Engineer, Architect, Cloud lover, Linux Advocate containerise all the things!"
   bio = "Software Engineer, Architect, Cloud lover, Linux Advocate containerise all the things!"
-  links = [
-    { twitter = "https://twitter.com/robrotheram" },
-    { github = "https://github.com/robrotheram" },
-  ]
+ 

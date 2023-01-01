@@ -2,10 +2,6 @@
   command = "hugo --gc --minify -D -b $URL"
   publish = "public"
 
-[build.environment]
-HUGO_THEMESDIR = "../.."
-HUGO_THEME = "repo"
-
 [context.production.environment]
 HUGO_VERSION = "0.104.1"
 HUGO_ENV = "production"

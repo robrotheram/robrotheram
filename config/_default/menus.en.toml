@@ -22,8 +22,8 @@
 
 [[main]]
   name = "CV"
-  url = "https://gallery.exceptionerror.io"
-  weight = 20
+  url = "CV_2024.pdf"
+  weight = 30
 
 [[main]]
   identifier = "twitter"

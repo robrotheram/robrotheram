@@ -9,6 +9,8 @@ Driving DevOPS methodology with current projects for various clients including D
 
 Management of systems using configuration management with Ansible Monitoring servers and applications with tools like ELK stack  Prometheus and Grafana
 
+[Grab a copy of my CV](./CV_2024.pdf)
+
 ----
 
 

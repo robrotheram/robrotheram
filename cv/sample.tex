@@ -1,0 +1,247 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.7, 9 August 2023) written by LianTze Lim (liantze@gmail.com). Compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+%% AltaCV uses the fontawesome5 and packages.
+%% See http://texdoc.net/pkg/fontawesome5 for full list of symbols.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+% WHEN COMPILING WITH XELATEX PLEASE USE
+% xelatex -shell-escape -output-driver="xdvipdfmx -z 0" sample.tex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  % If using pdflatex:
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  % \usepackage{sourcesanspro}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+% Change the colours if you want to
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+
+\begin{document}
+\name{Robert Fletcher}
+\tagline{Senior Technical Consultant}
+%% You can add multiple photos on the left or right
+% \photoR{2.8cm}{Globe_High}
+\photoL{2.5cm}{Profile}
+
+\personalinfo{%
+  % Not all of these are required!
+  \phone{07752424726}
+  \location{Malvern, UK}
+  \email{robrotheram@gmail.com}
+  \github{robrotheram}
+  \linkedin{robrotheram}
+  %% You can add your own arbitrary detail with
+  %% \printinfo{symbol}{detail}[optional hyperlink prefix]
+  % \printinfo{\faPaw}{Hey ho!}[https://example.com/]
+
+  %% Or you can declare your own field with
+  %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
+  % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
+  % \gitlab{your_id}
+  %%
+  %% For services and platforms like Mastodon where there isn't a
+  %% straightforward relation between the user ID/nickname and the hyperlink,
+  %% you can use \printinfo directly e.g.
+  % \printinfo{\faMastodon}{@username@instace}[https://instance.url/@username]
+  %% But if you absolutely want to create new dedicated info fields for
+  %% such platforms, then use \NewInfoField* with a star:
+  % \NewInfoField*{mastodon}{\faMastodon}
+  %% then you can use \mastodon, with TWO arguments where the 2nd argument is
+  %% the full hyperlink.
+  % \mastodon{@username@instance}{https://instance.url/@username}
+}
+
+\makecvheader
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.6}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+\cvsection{Experience}
+\cvevent{CACI}{Senior Technical Consultant}{March 2024 - Present}{}
+\divider
+\cvevent{Roke}{Consultant Engineer}{March 2024 - March 2024}{}
+\begin{itemize}
+\item Technical lead on a big data batch analytic project. 
+Setup various DevSecOps pipelines to get software built and delivered to key stakeholders
+\item Technical mentor in Roke Academy to help up-skill new members in best practices of software development and DevSecOps and AWS 
+\end{itemize}
+\divider
+\cvevent{Qinetiq}{Senior Software Engineer}{July 2021 - March 2023}{}
+\begin{itemize}
+    \item Technical Lead managing a team of 6 Engineers to build a variety of custom applications for the customer. Help up skill multiple team members on a variety of new skills.
+    \item Building a highly salable message processing system that use Kubernetes orchestration to build new processing environments. 
+    Technologies: AWS, RabbitMq, Mongo, MinI, Spring-Boot, Kubernetes, NextJS, Elasticsearch
+    \item Developed accessible cooperate directory lookup web application 
+    Technologies: AWS, Kubernetes, Elasticsearch React-JS
+\end{itemize}
+
+
+\cvevent{}{Big Data Engineer}{September 2016 - July 2021}{}
+\begin{itemize}
+ \item Driving DevOPS methodology with current projects for the customer:
+ \begin{itemize}
+     \item Deployed Jenkins CI Server and pipelines 
+     \item Deployment and configuration management with Ansible.
+     \item Monitoring servers and applications with tools like ELK stack, Prometheus and Grafana
+     \item Designed a Big Data modular streaming Architecture. 
+     \item Setup setup multiple Kubernetes clusters 
+     \item Linux (RHEL, Ubuntu) and Windows Server administration
+     \item Developed Small tools in Go
+  \end{itemize}
+  \item Manage Enterprise scale Elasticsearch clusters.
+  \begin{itemize}
+   \item Custom Webproxy written in Java Spring on JBOS
+   \item Management of several Elasticsearch clusters
+   \item Created Custom Elasticsearch and Kibana plugin 
+  \end{itemize}
+ \end{itemize}
+
+\columnratio{1}
+\divider
+
+\cvevent{Cisco}{Software Engineer}{August 2015 -- September 2016}{}
+\begin{itemize}
+ \item Worked on Apache Perl Manufacturing Management Platform
+ \item Installation and configuration of multiple Openstack Clusters in worldwide data centers 
+ \item Implement a big data Analytic platform that uses Logstash, Scala/Spark and MongoDB
+ \item Custom UI Fronted to the Analytic platform written in Angualrjs and custom D3 Visualization
+ \end{itemize}
+ 
+\medskip
+\medskip
+\cvsection{Education}
+\cvevent{M.Eng.\ in Computing}{Swansea University 1st class HONS }{June 2015}{}
+% \cvsection{Dissertations}
+
+\textbf{Visualising Engineering data and display it for public understanding.}\par
+
+Single Page Web-app that was designed to engage the public with engineering topics
+
+\faCode \hspace{0.5em} WebGL - Nodejs - SocketIO
+
+\faCalendar \hspace{0.5em} 2015
+
+\divider
+
+\textbf{Health care Visualisation}\par
+
+Visualisation public available healthcare data to identify trends
+
+\faCode \hspace{0.5em}  Angular JS Python Flask-REST - MYSQL
+
+\faCalendar \hspace{0.5em} 2015
+
+\divider
+
+\textbf{Digitising the campus}\par
+
+The project involved capturing multiple building and rendering them and adding a navigation layer to
+help a person navigate the campus.
+
+\faCode  \hspace{0.5em} SFM - point clouds - Java - OpenGL - Unity - Blender - C\#
+
+\faCalendar \hspace{0.5em} 2014
+
+\divider
+
+
+
+
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+\switchcolumn
+\cvsection{Skills}
+\cvtag{Containers}
+\cvtag{Kubernetes}
+\cvtag{Openstack}
+\cvtag{DevOPS}
+\cvtag{Ansible}
+\cvtag{Linux configuration}
+\cvtag{Java}
+\cvtag{Go}
+\cvtag{Python}
+\cvtag{Elasticsearch}
+
+\divider\smallskip
+
+\cvtag{Quick Learner}
+\cvtag{Team Leader}
+\cvtag{Problem Solver}
+\cvtag{Aglie working}
+\cvtag{Test Driven Development}
+
+
+%% Yeah I didn't spend too much time making all the
+%% spacing consistent... sorry. Use \smallskip, \medskip,
+%% \bigskip, \vspace etc to make adjustments.
+\medskip
+
+
+\cvsection{Certificates}
+\cvachievement{\faCertificate}{Certified Scrum Product Owner®}{}
+\cvachievement{\faCertificate}{AWS Certified Solutions Architect – Associate}{}
+\cvachievement{\faCertificate}{AWS Essentials}{}
+
+\cvsection{Awards}
+\cvachievement{\faTrophy}{1st place Digital 2014 Hackathon - Software Alliance Wales}{}
+\cvachievement{\faTrophy}{City and Guilds Level 4 Software Development}{}
+\end{paracol}
+\end{document}

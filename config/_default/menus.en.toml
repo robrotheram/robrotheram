@@ -19,7 +19,11 @@
   name = "Gallery"
   url = "https://gallery.exceptionerror.io"
   weight = 20
-  
+
+[[main]]
+  name = "CV"
+  url = "https://gallery.exceptionerror.io"
+  weight = 20
 
 [[main]]
   identifier = "twitter"

@@ -7,7 +7,7 @@ rtl = false
 
 title = "Tinkers.space"
 #logo = "img/profile.jpg"
-description = "Software Engineer, Architect, Cloud lover, Linux Advocate containerise all the things!"
+description = "Software Engineer, Cloud Architect, Linux Advocate."
 # copyright = "Copy, _right?_ :thinking_face:"
 
 dateFormat = "2 January 2006"
@@ -15,6 +15,6 @@ dateFormat = "2 January 2006"
 [author]
   name = "Robert Fletcher"
   image = "img/profile.jpg"
-  headline = "Software Engineer, Architect, Cloud lover, Linux Advocate containerise all the things!"
-  bio = "Software Engineer, Architect, Cloud lover, Linux Advocate containerise all the things!"
+  headline = "Software Engineer, Cloud Architect, Linux Advocate."
+  bio = "Software Engineer, Cloud Architect, Linux Advocate."
  
